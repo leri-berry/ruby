@@ -1,9 +1,9 @@
 puts "Введите 3 коэфициента a, b, c"
 coefficient = gets.chomp
 integer = coefficient.split.map(&:to_i)
-a = integer[0]; 2
-b = integer[1]; 3
-c = integer[2]; 4
+a = integer[0]; 
+b = integer[1]; 
+c = integer[2]; 
 d = b**2 - 4*a*c
 if d > 0 
     c = Math.sqrt(d)
