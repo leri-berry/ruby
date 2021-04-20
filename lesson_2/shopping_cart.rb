@@ -1,4 +1,4 @@
-shopping_cart = Hash.new
+shopping_cart = {}
 sum = 0
 loop do 
   puts 'Enter product name or enter stop to finish process'
@@ -13,5 +13,3 @@ loop do
 end
 shopping_cart.each { |key, value| sum += value['cost']}
 puts "Total: #{sum}"
-
-
