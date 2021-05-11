@@ -19,19 +19,21 @@ class Train
     @speed = 0
   end
 
-  def add_or_remove_carriage
-    if @speed != 0
-      puts 'Stop train to add/delete a carriage'
-    else
-      puts "Enter 'add' or 'delete' a carriage"
-      choice = gets.chomp
-      if choice == 'add'
-        @number_of_carriages += 1
-      else
-        @number_of_carriages -= 1
-      end
-    end
+  def add_carriage
+    if @speed == 0
+    @number_of_carriages += 1
+  else
+    puts 'Stop the train'
   end
+end
+
+  def remove_carriage
+    if @speed == 0
+    @number_of_carriages -= 1
+  else
+    puts 'Stop the train'
+  end
+end
 
   def set_route(route)
     @route = route
